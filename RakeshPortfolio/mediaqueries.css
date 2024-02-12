@@ -24,6 +24,10 @@
     display: none;
     
   }
+  .menu-links{
+    background-color: white;
+    border-radius: 10px;
+  }
   #hamburger-nav {
     display: flex;
     flex-direction: row-reverse;
@@ -84,6 +88,10 @@
 @media screen and (max-width: 500px) {
   nav{
     height: 0;
+  }
+  .menu-links{
+    background-color: white;
+    border-radius: 10px;
   }
   
   #contact,
