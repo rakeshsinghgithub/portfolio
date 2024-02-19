@@ -17,6 +17,31 @@
   .section__pic-container img{
   animation: wiggle 6s linear infinite;
   }
+  @keyframes revealText {
+  0% {
+      width: 0;
+      opacity: 1;
+  }
+  50% {
+      width: 100%;
+      opacity: 1;
+  }
+  100% {
+      width: 0;
+      opacity: 0;
+  }
+}
+.section__text__p2 {
+  margin: 0;
+    color: #f75823;
+    font-weight: 800;
+    overflow: hidden;
+    white-space:nowrap ;
+    animation: revealText 3s infinite;
+
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
 }
 
 @media screen and (max-width: 1000px) {
@@ -83,6 +108,17 @@
   #experience{
     height: fit-content;
   }
+  .section__text__p2 {
+    text-align: center;
+    color: #f75823;
+    font-weight: 600;
+    overflow: hidden;
+    white-space:nowrap ;
+    animation: revealText 0s;
+
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -162,4 +198,15 @@
   #experience{
     height: fit-content;
   }
+  .section__text__p2 {
+    text-align: center;
+    color: #f75823;
+    font-weight: 600;
+    overflow: hidden;
+    white-space:nowrap ;
+    animation: revealText 0s;
+
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
 }
